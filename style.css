@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: cornflowerblue;
+}
+
+#card {
+  border-radius: 7px;
+  height: 600px;
+  width: 450px;
+  background-color: #fff;
+  text-align: center;
+}
+#card img {
+  height: 80%;
+  width: 80%;
+  display: block;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+#card h1 {
+  font-size: 25px;
+  margin: 6px 0px;
+}
+#card h5 {
+  font-size: 25px;
+  color: red;
+  margin: 20px;
+}/*# sourceMappingURL=style.css.map */
