@@ -11,14 +11,47 @@
 <body>
 
     <div id="card">
-        <img src="https://w0.peakpx.com/wallpaper/368/441/HD-wallpaper-cute-anime-girl-anime-cat-girl-anime-girl-cartoon-cat-girl-cute-anime.jpg"
-            alt="">
+        <img src="http://m.gettywallpapers.com/wp-content/uploads/2023/05/Anime-Girl-Attitude-Pfp.jpg" alt="">
         <h1>Angelena</h1>
-        <h5>Stranger</h5>
+        <h4>Stranger</h4>
         <div id="btn-container">
-<button>Add Friend</button>
+            <!-- <button id="remove">Remove</button> -->
+            <button id="add">Add Friend</button>
         </div>
     </div>
+
+    <script>
+        let istatus = document.querySelector("h4")
+        let add = document.querySelector("#add")
+        // let remove = document.querySelector("#remove")
+        let check = 0
+
+        add.addEventListener("click", function () {
+            if (check === 0) {
+                istatus.innerHTML = "Friends"
+                istatus.style.color = "rgb(37, 228, 212)"
+                add.style.color = "#fff"
+                add.style.backgroundColor = "red"
+                add.innerHTML = "Remove Friend"
+                alert("Hui Hui Hui Bachi ny add kr lea ")
+                check = 1
+            } else {
+                istatus.innerHTML = "Stranger"
+                istatus.style.color = "red"
+                add.style.color = "#fff"
+                add.style.backgroundColor = "rgb(37, 228, 212)"
+                add.innerHTML = "Add Friend"
+                alert("oops bachi kat gae, kia....??  ")
+                check = 0
+
+            }
+        })
+
+        // remove.addEventListener("click", function () {
+        //     istatus.innerHTML = "Stranger"
+        //     istatus.style.color = "red"
+        // })
+    </script>
 </body>
 
 </html>

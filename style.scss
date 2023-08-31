@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 html,
@@ -20,28 +21,48 @@ body {
 
 #card {
     border-radius: 7px;
-    height: 600px;
-    width: 450px;
+    height: 500px;
+    width: 350px;
     background-color: #fff;
     text-align: center;
 
     img {
-        height: 80%;
-        width: 80%;
+        height: 70%;
+        width: 95%;
         display: block;
         margin: auto;
         object-fit: cover;
         object-position: center;
+        margin-top: 10px;
     }
 
     h1 {
-        font-size: 25px;
-        margin: 6px 0px;
+        font-size: 30px;
+        margin: 6px 0px 3px 0px;
     }
 
-    h5 {
+    h4 {
         font-size: 25px;
         color: red;
-        margin: 20px;
+        margin-bottom: 14px;
+    }
+
+    button {
+        padding: 8px 10px;
+        font-size: 16px;
+        border: none;
+        margin: 0px 2px;
+        outline: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    #add {
+        background-color: rgb(37, 228, 212);
+        color: #fff;
+    }
+
+    #remove {
+        background-color: gainsboro;
     }
 }
